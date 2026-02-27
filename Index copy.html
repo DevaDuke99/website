@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devanandam | Profile</title>
+    <link rel="stylesheet" href="style copy.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<nav class="navbar">
+    <div class="nav-container">
+      <div class="logo"></div>
+  
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Projects</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<script>
+    function openTab(evt, tabName) {
+      // hide all tabs
+      document.querySelectorAll(".tab-content").forEach(tab => {
+        tab.classList.remove("active");
+      });
+    
+      // remove active from buttons
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.classList.remove("active");
+      });
+    
+      // show selected
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+    </script>
+
+<body>
+  <header>
+    <h1>Devanandam V</h1>
+    <h2>Business Analyst</h2>
+
+    <section class="socials container">
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+          <img src="icons/Linkedin W.svg" alt="LinkedIn" />
+        </a>
+      
+        <a href="https://github.com/yourusername" target="_blank">
+          <img src="icons/Github W.svg" alt="GitHub" />
+        </a>
+      
+        <a href="mailto:your@email.com">
+          <img src="icons/Email W.svg" alt="Email" />
+        </a>
+      
+        <a href="assets/Devanandam Resume.pdf" download class="resume-btn">
+          <img src="icons/Resume W.svg" alt="Download Resume" />
+        </a>
+      </section>
+
+  </header>
+
+  <div class="tabs container">
+    <button class="tab-btn active" onclick="openTab(event, 'experience')">
+      Work Experience
+    </button>
+    <button class="tab-btn" onclick="openTab(event, 'projects')">
+      Projects
+    </button>
+  </div>
+
+  <section class="about container">
+    <h3>About Me</h3>
+    <p>Business Analyst with 5 Years of Experience across marketing, sales and supply chain management. Expert in Analytics, Business development with data driven solutions, Dashboard Building, Data Warehosuing and API scripting for various applications </p>
+  </section>
+  <section id="experience" class="tab-content container active">
+    <h3>Work Experience</h3>
+  
+    <div class="card">
+      <h4>Business Analyst</h4>
+      <p><strong>Company:</strong> Your Company Name</p>
+      <p><strong>Duration:</strong> 2021 – Present</p>
+      <p>
+        Worked on marketing, sales and supply chain analytics. Built dashboards,
+        automated reporting pipelines, and improved decision-making using data.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Projects Tab -->
+  <section id="projects" class="tab-content container">
+    <h3>Projects</h3>
+  
+    <div class="card">
+      <h4>Sales Dashboard in Power BI</h4>
+      <p>Interactive dashboard for tracking regional sales performance.</p>
+      <a href="#" target="_blank">View Project →</a>
+    </div>
+  
+    <div class="card">
+      <h4>Python Sales Forecast Model</h4>
+      <p>Time-series forecasting model for demand prediction.</p>
+      <a href="#" target="_blank">View Project →</a>
+    </div>
+  </section>
+  <section class="skills container">
+    <h3>Skills</h3>
+    <ul>
+      <li><a href="#" target="https://github.com/Devanandham99/Portfolio-Projects">Python</a></li>
+      <li><a href="#" target="https://github.com/Devanandham99/Portfolio-Projects">Power BI</a></li>
+      <li><a href="#" target="https://github.com/Devanandham99/Portfolio-Projects">SQL</a></li>
+      <li><a href="#" target="https://github.com/Devanandham99/Portfolio-Projects">Advanced Excel</a></li>
+      <li><a href="#" target="https://github.com/Devanandham99/Portfolio-Projects">Tableau</a></li>
+      <li><a href="#" target="https://github.com/Devanandham99/Portfolio-Projects">Statistical Models</a></li>
+      <li><a href="#" target="https://github.com/Devanandham99/Portfolio-Projects">Hubspot CRM</a></li>
+      <li><a href="#" target="https://github.com/Devanandham99/Portfolio-Projects">Zoho CRM</a></li>
+      <li><a href="#" target="https://github.com/Devanandham99/Portfolio-Projects">Freshworks CRM</a></li>
+      <li><a href="#" target="https://github.com/Devanandham99/Portfolio-Projects">Zoho Books</a></li>
+      <li><a href="#" target="https://github.com/Devanandham99/Portfolio-Projects">Google Looker Studio</a></li>
+      <li><a href="#" target="https://github.com/Devanandham99/Portfolio-Projects">Google Analytics</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2026 Your Name</p>
+  </footer>
+</body>
+
+</html>
