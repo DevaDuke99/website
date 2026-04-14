@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devanandam | Profile</title>
+    <link rel="icon" type="image/svg+xml" href="favicon-B.svg">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+      <div class="logo"></div>
+  
+      <ul class="nav-links">
+        <li><a href="Index.html" class="active">Home</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="Contacts.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<script>
+    function openTab(evt, tabName) {
+      // hide all tabs
+      document.querySelectorAll(".tab-content").forEach(tab => {
+        tab.classList.remove("active");
+      });
+    
+      // remove active from buttons
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.classList.remove("active");
+      });
+    
+      // show selected
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+</script>
+
+
+  <header>
+    <h1>Devanandam V</h1>
+    <h2>Business Analyst</h2>
+
+    <div class="socials">
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+          <img src="icons/linkedin-W.svg" alt="LinkedIn" />
+        </a>
+      
+        <a href="https://github.com/yourusername" target="_blank">
+          <img src="icons/github-W.svg" alt="GitHub" />
+        </a>
+      
+        <a href="mailto:devanadham2022@gmail.com">
+          <img src="icons/email-W.svg" alt="Email" />
+        </a>
+      
+        <a href="assets/devanandam-resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-btn">
+          <img src="icons/resume-W.svg" alt="Download Resume" />
+        </a>
+      </div>
+
+  </header>
+
+  <div class="tabs container">
+    <button class="tab-btn active" onclick="openTab(event, 'experience')">
+      Work Experience
+    </button>
+    <button class="tab-btn" onclick="openTab(event, 'projects')">
+      Projects
+    </button>
+  </div>
+
+  <section class="about container">
+    <h3>About Me</h3>
+    <p>Business Analyst with 5 Years of Experience across marketing, sales and supply chain management. Expert in Analytics, Business development with data driven solutions, Dashboard Building, Data Warehousing and API scripting for various applications</p>
+  </section>
+  <section id="experience" class="tab-content container active">
+    <h3>Work Experience</h3>
+  
+    <div class="card">
+      <h4>Business Analyst</h4>
+      <p><strong>Company:</strong> Erith Engineering Solutions</p>
+      <p><strong>Duration:</strong> 2024 – Present</p>
+      <p><strong>Location:</strong> Chennai (Based in Dubai)</p>
+      <p>
+        Worked on marketing, sales and supply chain analytics. Built dashboards, CRM migration, automated reporting pipelines, and improved decision-making using data driven analysis. Improved reporting efficiency of various teams by upto 75%. 
+      </p>
+
+      <!-- ✅ Skills used -->
+      <div class="card-skills">
+        <span class="skill-tag">Power BI</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">HubSpot</span>
+        <span class="skill-tag">Zoho Books</span>
+        <span class="skill-tag">Zoho CRM</span>
+        <span class="skill-tag">REST API</span>
+        <span class="skill-tag">SciKit-Learn</span>
+        <span class="skill-tag">Advanced Excel</span>
+      </div>
+    </div>
+    <div class="card">
+      <h4>Data Analyst</h4>
+      <p><strong>Company:</strong> LCS Controls Pvt Ltd</p>
+      <p><strong>Duration:</strong> 2023 - 2024</p>
+      <p><strong>Location:</strong> Chennai</p>
+      <p>
+        Worked on Web Analysis specializing in Google Looker Studio, Social media marketing analysis, Improved reporting structure by upto 80%. Integrations across various applications resulting in workflow efficiency of upto 60%.
+      </p>
+
+      <!-- ✅ Skills used -->
+      <div class="card-skills">
+        <span class="skill-tag">Google Looker Studio</span>
+        <span class="skill-tag">Google Analytics</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Freshworks</span>
+        <span class="skill-tag">Advanced Excel</span>
+        <span class="skill-tag">Meta Studio</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h4>Data Analyst</h4>
+      <p><strong>Company:</strong> Strings Music Academy</p>
+      <p><strong>Duration:</strong> 2021 - 2023</p>
+      <p><strong>Location:</strong> Chennai</p>
+      <p>
+        Worked on various analytical streamlining, creating reporting structure for social media analysis, Workflows and SoPs for various teams across the company
+      </p>
+
+      <!-- ✅ Skills used -->
+      <div class="card-skills">
+        <span class="skill-tag">Excel</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Meta Studio</span>
+        <span class="skill-tag">Linkedin Analytics</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Google Analytics</span>
+      </div>
+    </div>
+
+  </section>
+  
+  <!-- Projects Tab -->
+  <section id="projects" class="tab-content container">
+    <h3>Projects</h3>
+
+    <div class="card">
+      <h4>NLP Project On Book Reviews</h4>
+      <p>Using Natural Language Processing to analyze reviews of books and identify trends and patterns.</p>
+      <a href="https://github.com/Devanandham99/Portfolio-Projects/tree/22cbae666b708d479b3a723a235a0c40a0afc872/NLP%20Project%20On%20Book%20Reviews" target="_blank">View Project →</a>
+      <div class="card-skills">
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">Numpy</span>
+        <span class="skill-tag">Seaborn</span>
+        <span class="skill-tag">Matplotlib</span>
+        <span class="skill-tag">Text Processing</span>
+        <span class="skill-tag">Text Blob</span>
+        <span class="skill-tag">Sci-kit Learn</span>
+        <span class="skill-tag">Word Cloud</span>
+        <span class="skill-tag">NLTK</span>
+      </div>       
+    </div>
+
+    <div class="card">
+      <h4>Steam Games Analysis</h4>
+      <p>Analysis of social media data to understand user engagement patterns and metrics for various products.</p>
+      <a href="https://github.com/Devanandham99/Portfolio-Projects/tree/e1949dfdd8c539cf58ebae8cbb5620fc46101f01/Steam%20Games%20Data%20Analysis" target="_blank">View Project →</a>
+      <div class="card-skills">
+        <span class="skill-tag">Seaborn</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">Numpy</span>
+      </div>       
+    </div>
+  
+    <div class="card">
+      <h4>Car Sales Data Processing/Analysis</h4>
+      <p>Data processing and analysis of car sales database using pandas</p>
+      <a href="https://github.com/Devanandham99/Portfolio-Projects/tree/2d07270b5e9420db4c0938f591bab6245e6ea134/Car%20Sales%20Project" target="_blank">View Project →</a>
+      <div class="card-skills">
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">Matplotlib</span>
+      </div>  
+
+    </div>
+  
+    <div class="card">
+      <h4>Data Scraping</h4>
+      <p>Data Scraping using Selenium to get data for warehousing.</p>
+      <a href="https://github.com/Devanandham99/Portfolio-Projects/tree/2d07270b5e9420db4c0938f591bab6245e6ea134/Data%20Scraping" target="_blank">View Project →</a>
+      <div class="card-skills">
+        <span class="skill-tag">Selenium</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">BeautifulSoup</span>
+        <span class="skill-tag">requests</span>
+      </div>       
+    </div>
+
+    <div class="card">
+      <h4>Dashboard</h4>
+      <p>Example Dashboards using opensource datasets.</p>
+      <a href="https://github.com/Devanandham99/Portfolio-Projects/tree/70073669f018ca83e619e7d2b7d7c7980ea79258/Dashboards" target="_blank">View Project →</a>
+      <div class="card-skills">
+        <span class="skill-tag">Tableau</span>
+        <span class="skill-tag">Power BI</span>
+        <span class="skill-tag">Excel</span>
+        <span class="skill-tag">Google Looker Studio</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Google Sheets</span>
+      </div>       
+    </div>    
+
+    <div class="card">
+      <h4>CRM to Google Sheets Integration</h4>
+      <p>Pulling data from Hubspot CRM to Google Sheets using REST API.</p>
+      <a href="https://github.com/Devanandham99/Portfolio-Projects/tree/3ea5dff24ce69333540878bbf10d671288c5dcb7/Hubspot%20to%20Google%20Sheets%20REST%20API" target="_blank">View Project →</a>
+      <div class="card-skills">
+        <span class="skill-tag">REST API</span>
+        <span class="skill-tag">Hubspot</span>
+        <span class="skill-tag">Google Sheets</span>
+        <span class="skill-tag">JS</span>
+      </div>       
+    </div>
+
+    <div class="card">
+      <h4>Social Media Analysis</h4>
+      <p>Analysis of social media data to understand user engagement patterns and metrics for various products.</p>
+      <a href="https://github.com/Devanandham99/Portfolio-Projects/tree/26cd659598d46aff903115a7fd73586966958144/Social%20Media%20Project" target="_blank">View Project →</a>
+      <div class="card-skills">
+        <span class="skill-tag">Meta Studio</span>
+        <span class="skill-tag">Linkedin</span>
+        <span class="skill-tag">Seaborn</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">Matplotlib</span>
+        <span class="skill-tag">Numpy</span>
+      </div>       
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Devanandam</p>
+  </footer>
+</body>
+
+</html>
